@@ -5,5 +5,3 @@ CREATE TABLE question2(
     age NUMBER(3) NOT NULL,
     PRIMARY KEY (roll_no)
 );
-
-SELECT * from question2;

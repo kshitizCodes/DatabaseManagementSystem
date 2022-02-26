@@ -1,5 +1,3 @@
 CREATE TABLE question3 AS(
     SELECT * FROM QUESTION1 WHERE AGE>20
 );
-
-SELECT * from question3;

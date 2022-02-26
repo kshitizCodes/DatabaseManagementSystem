@@ -3,3 +3,5 @@ CREATE TABLE question1(
     lastname VARCHAR(20),
     age NUMBER(3)
 );
+
+SELECT * from question1;
