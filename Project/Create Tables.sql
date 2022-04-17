@@ -35,6 +35,9 @@ CREATE TABLE class
     CONSTRAINT class_pk PRIMARY KEY (id)
 );
 
+ALTER TABLE class
+    MODIFY id number(3);
+
 CREATE TABLE craft_essence
 (
     id          number(4),

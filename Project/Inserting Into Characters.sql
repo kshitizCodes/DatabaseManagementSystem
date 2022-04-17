@@ -1,11 +1,8 @@
-SELECT *
-FROM CHARACTER;
-
 INSERT INTO CHARACTER
 VALUES (character_auto.nextval, 'Saber', 'Nero Claudius', 'Rome', 'Chaotic-Good', 'WADARCO', 'Sakura Tange', 'D',
         'D', 'A', 'A', 'Traces of Christmases Past', 12581, 15270);
 INSERT INTO CHARACTER
-VALUES (character_auto.nextval, 'Berserker', 'Arjuna Alter', 'India', 'Lawful-Good/Evil', 'pako', 'Nobunaga Shimizaki',
+VALUES (character_auto.nextval, 'Berserker', 'Arjuna Alter', 'India', 'Lawful-Good/Evil', 'pako', 'Nobunaga Shimijaki',
         'A', 'A+', 'A', 'C', 'Kaleidoscope', 14553, 16939);
 INSERT INTO CHARACTER
 VALUES (character_auto.nextval, 'Archer', 'Arjuna', 'India', 'Lawful-Balanced', 'pako', 'Nobunaga Shimijaki', 'A', 'B',

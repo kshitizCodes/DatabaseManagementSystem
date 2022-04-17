@@ -1,6 +1,3 @@
-ALTER TABLE class
-    MODIFY id number(3);
-
 INSERT INTO class
 VALUES (class_auto.nextval, 'Saber');
 INSERT INTO class
@@ -25,7 +22,3 @@ INSERT INTO class
 VALUES (class_auto.nextval, 'Moon Cancer');
 INSERT INTO class
 VALUES (class_auto.nextval, 'Pretender');
-
-
-SELECT *
-FROM class;
