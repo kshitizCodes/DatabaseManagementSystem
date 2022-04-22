@@ -18,4 +18,6 @@ CREATE SEQUENCE class_auto
     INCREMENT BY 1
     START WITH 1;
 
-DROP SEQUENCE enemies_auto;
+CREATE SEQUENCE audit_auto
+    INCREMENT BY 1
+    START WITH 1;

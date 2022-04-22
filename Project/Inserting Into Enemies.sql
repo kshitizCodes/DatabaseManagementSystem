@@ -29,4 +29,5 @@ VALUES (enemies_auto.nextval, 'Dragon', 'Dragon Kind', 'Unknown', 15000, 300000)
 INSERT INTO enemies
 VALUES (enemies_auto.nextval, 'Spriggan', 'Phantasmal Beast', 'Unknown', 10000, 100000);
 
-commit;
+select *
+from AUDIT_;
