@@ -1,7 +1,3 @@
-DELETE
-FROM ENEMIES
-WHERE id > 0;
-
 INSERT INTO enemies
 VALUES (enemies_auto.nextval, 'Lamia', 'Demi-Human', 'Okeanos', 1500, 9120);
 
@@ -28,6 +24,3 @@ VALUES (enemies_auto.nextval, 'Dragon', 'Dragon Kind', 'Unknown', 15000, 300000)
 
 INSERT INTO enemies
 VALUES (enemies_auto.nextval, 'Spriggan', 'Phantasmal Beast', 'Unknown', 10000, 100000);
-
-select *
-from AUDIT_;

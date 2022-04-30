@@ -17,7 +17,3 @@ INSERT INTO CHARACTER
 VALUES (character_auto.nextval, 'Lancer', 'Tamamo-no-Mae', 'Japan', 'Neutral-Summer', 'WADARCO', 'Chiwa Saito', 'B',
         'C', 'A', 'A', 'Fondant au Chocolat', 11726, 16147);
 
-
-
-SELECT *
-FROM CHARACTER;

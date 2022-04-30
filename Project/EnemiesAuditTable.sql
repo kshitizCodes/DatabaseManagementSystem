@@ -7,3 +7,5 @@ create table audit_
     transaction_on   date,
     PRIMARY KEY (audit_id)
 );
+
+select * from audit_;

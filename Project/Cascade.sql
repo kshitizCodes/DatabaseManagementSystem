@@ -1,0 +1,7 @@
+SELECT * FROM CHARACTER;
+DELETE
+FROM VOICE_ACTOR
+WHERE name = 'Nobunaga Shimijaki';
+SELECT id, class, name, voice_actor
+FROM CHARACTER;
+SELECT * FROM CHARACTER;

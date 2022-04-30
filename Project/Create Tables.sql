@@ -15,11 +15,17 @@ CREATE TABLE character
     atk           number(10),
     hp            number(10),
     CONSTRAINT character_pk_id PRIMARY KEY (id),
-    CONSTRAINT ce_fk FOREIGN KEY (craft_essence) REFERENCES craft_essence (name),
-    CONSTRAINT va_fk FOREIGN KEY (voice_actor) REFERENCES voice_actor (name),
+    CONSTRAINT ce_fk FOREIGN KEY (craft_essence)
+        REFERENCES craft_essence (name),
+    CONSTRAINT va_fk FOREIGN KEY (voice_actor)
+        REFERENCES voice_actor (name),
     CONSTRAINT class_fk FOREIGN KEY (class) REFERENCES class (name)
 );
 
+ALTER TABLE CHARACTER DROP CONSTRAINT va_fk;
+ALTER TABLE CHARACTER ADD CONSTRAINT va_fk
+FOREIGN KEY (VOICE_ACTOR) REFERENCES voice_actor(name)
+ON DELETE CASCADE;
 
 CREATE TABLE voice_actor
 (
@@ -30,13 +36,10 @@ CREATE TABLE voice_actor
 
 CREATE TABLE class
 (
-    id   number(1),
+    id   number(3),
     name varchar(64) UNIQUE,
     CONSTRAINT class_pk PRIMARY KEY (id)
 );
-
-ALTER TABLE class
-    MODIFY id number(3);
 
 CREATE TABLE craft_essence
 (
@@ -51,12 +54,12 @@ CREATE TABLE craft_essence
 
 CREATE TABLE enemies
 (
-    id     number(5),
-    name   varchar(64) UNIQUE,
-    class  varchar(64),
-    origin varchar(64),
-    atk    varchar(64),
-    hp     varchar(64),
-    CONSTRAINT enemy_pk PRIMARY KEY (id)
+    id     number(5) NOT NULL,
+    name   varchar(64) UNIQUE NOT NULL,
+    class  varchar(64) NOT NULL,
+    origin varchar(64) NOT NULL,
+    atk    number(10) NOT NULL,
+    hp     number(10) NOT NULL,
+    CONSTRAINT enemy_pk PRIMARY KEY (id),
+    CONSTRAINT check_id CHECK ( ID between 1 and 9999)
 );
-

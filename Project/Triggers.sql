@@ -10,5 +10,6 @@ BEGIN
         WHEN INSERTING THEN 'INSERT'
         WHEN UPDATING THEN 'UPDATE'
     END;
-INSERT INTO audit_ VALUES(audit_auto.nextval,'ENEMIES',process_done, USER, SYSDATE);
+INSERT INTO audit_ VALUES(audit_auto.nextval, 'ENEMIES', process_done, USER, SYSDATE);
 END;
+/
